@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="english">
+  <head>
+    <title>Trang web bán giày</title>
+    <meta property="og:title" content="exported project" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;  -webkit-font-smoothing: antialiased;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;  color: inherit;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}pre {  white-space: normal;}input {  padding: 2px 4px;}img {  display: block;}details {  display: block;  margin: 0;  padding: 0;}summary::-webkit-details-marker {  display: none;}[data-thq="accordion"] [data-thq="accordion-content"] {  max-height: 0;  overflow: hidden;  transition: max-height 0.3s ease-in-out;  padding: 0;}[data-thq="accordion"] details[data-thq="accordion-trigger"][open] + [data-thq="accordion-content"] {  max-height: 1000vh;}details[data-thq="accordion-trigger"][open] summary [data-thq="accordion-icon"] {  transform: rotate(180deg);}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-theme-neutral-dark);
+        background: var(--dl-color-theme-neutral-light);
+
+        fill: var(--dl-color-theme-neutral-dark);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./index.css" rel="stylesheet" />
+
+      <div class="trangchu-container1">
+        <div class="trangchu-thq-trangchu-elm">
+          <img
+            src="public/rectangle2614-hut-200h.png"
+            alt="Rectangle2614"
+            class="trangchu-thq-rectangle2-elm"
+          />
+          <div class="trangchu-thq-frame1-elm">
+            <span class="trangchu-thq-text-elm10">Trang chủ</span>
+            <span class="trangchu-thq-text-elm11">Giới thiệu</span>
+            <span class="trangchu-thq-text-elm12">Nike</span>
+            <span class="trangchu-thq-text-elm13">Adidas</span>
+            <span class="trangchu-thq-text-elm14">Converse</span>
+            <span class="trangchu-thq-text-elm15">Giày Nam</span>
+            <span class="trangchu-thq-text-elm16">Giày Nữ</span>
+            <span class="trangchu-thq-text-elm17">Trẻ em</span>
+            <span class="trangchu-thq-text-elm18">Giỏ hàng</span>
+            <span class="trangchu-thq-text-elm19">Tư vấn</span>
+          </div>
+          <img
+            src="public/rectangle1411-vnv6-200h.png"
+            alt="Rectangle1411"
+            class="trangchu-thq-rectangle1-elm"
+          />
+          <img
+            src="public/search512-lpg-200w.png"
+            alt="Search512"
+            class="trangchu-thq-search-elm"
+          />
+          <img
+            src="public/hdrestorationresultimage1615-pp8f-200h.png"
+            alt="hdrestorationresultimage1615"
+            class="trangchu-thq-hdrestorationresultimage1-elm"
+          />
+          <img
+            src="public/rectangle3616-25z-300h.png"
+            alt="Rectangle3616"
+            class="trangchu-thq-rectangle3-elm"
+          />
+          <img
+            src="public/rectangle4717-d4k-300h.png"
+            alt="Rectangle4717"
+            class="trangchu-thq-rectangle4-elm"
+          />
+          <img
+            src="public/rectangle5718-uwx9-300h.png"
+            alt="Rectangle5718"
+            class="trangchu-thq-rectangle5-elm"
+          />
+          <img
+            src="public/rectangle6719-ww81-300h.png"
+            alt="Rectangle6719"
+            class="trangchu-thq-rectangle6-elm"
+          />
+          <img
+            src="public/rectangle7721-w0wp-300h.png"
+            alt="Rectangle7721"
+            class="trangchu-thq-rectangle7-elm"
+          />
+          <img
+            src="public/rectangle8722-iunv-300h.png"
+            alt="Rectangle8722"
+            class="trangchu-thq-rectangle8-elm"
+          />
+          <img
+            src="public/rectangle9723-0vk-300h.png"
+            alt="Rectangle9723"
+            class="trangchu-thq-rectangle9-elm"
+          />
+          <span class="trangchu-thq-text-elm20">
+            <span class="trangchu-thq-text-elm21">Nike</span>
+            <br />
+            <br />
+            <span class="trangchu-thq-text-elm22">
+              Giày Nike Air Force 1 Low College Pack Midnight Navy DQ7659 101
+            </span>
+            <br />
+            <span class="trangchu-thq-text-elm23"></span>
+            <br />
+            <span>3.621.000đ</span>
+          </span>
+          <span class="trangchu-thq-text-elm25">
+            <span class="trangchu-thq-text-elm26">Adidas</span>
+            <br />
+            <br />
+            <span class="trangchu-thq-text-elm27">
+              Giày Adidas Nam Nữ Chính Hãng - Pureboost Light Shoes - Màu Đen
+            </span>
+            <br />
+            <br />
+            <span>1.580.000đ</span>
+          </span>
+          <span class="trangchu-thq-text-elm29">
+            <span class="trangchu-thq-text-elm30">Bitis</span>
+            <br />
+            <br />
+            <span class="trangchu-thq-text-elm31">
+              Giày Thể Thao Biti’s Hunter Running LiteDual
+            </span>
+            <span class="trangchu-thq-text-elm32">&nbsp;</span>
+            <br />
+            <span class="trangchu-thq-text-elm33"></span>
+            <br />
+            <span>1.259.000đ</span>
+          </span>
+          <span class="trangchu-thq-text-elm35">
+            <span class="trangchu-thq-text-elm36">MLB</span>
+            <br />
+            <br />
+            <span class="trangchu-thq-text-elm37">
+              Giày Trẻ Em MLB&nbsp;Big Ball Chunky Flex Girls Monogram New York
+            </span>
+            <br />
+            <span class="trangchu-thq-text-elm38"></span>
+            <br />
+            <span>2.190.000đ</span>
+          </span>
+          <span class="trangchu-thq-text-elm40">
+            <span class="trangchu-thq-text-elm41">Zocker</span>
+            <br />
+            <br />
+            <span class="trangchu-thq-text-elm42">
+              Giày Chạy Bộ Zocker Ultra Light Moon/Black
+            </span>
+            <br />
+            <span class="trangchu-thq-text-elm43"></span>
+            <br />
+            <span>690.000đ</span>
+          </span>
+          <span class="trangchu-thq-text-elm45">
+            <span class="trangchu-thq-text-elm46">Converse</span>
+            <br />
+            <br />
+            <span class="trangchu-thq-text-elm47">
+              Giày Thể Thao Converse Chuck 70 Hi Unisex
+            </span>
+            <br />
+            <span class="trangchu-thq-text-elm48"></span>
+            <br />
+            <span>2.200.000đ</span>
+          </span>
+          <span class="trangchu-thq-text-elm50">PHONG CÁCH</span>
+          <img
+            src="public/line1870-iw3a.svg"
+            alt="Line1870"
+            class="trangchu-thq-line1-elm"
+          />
+          <img
+            src="public/rectangle10880-gcv-300w.png"
+            alt="Rectangle10880"
+            class="trangchu-thq-rectangle10-elm"
+          />
+          <img
+            src="public/rectangle11881-gemh-300w.png"
+            alt="Rectangle11881"
+            class="trangchu-thq-rectangle11-elm"
+          />
+          <img
+            src="public/rectangle12882-zz43-300w.png"
+            alt="Rectangle12882"
+            class="trangchu-thq-rectangle12-elm"
+          />
+          <img
+            src="public/rectangle13883-pbx-300w.png"
+            alt="Rectangle13883"
+            class="trangchu-thq-rectangle13-elm"
+          />
+          <span class="trangchu-thq-text-elm51">Trẻ trung</span>
+          <span class="trangchu-thq-text-elm52">Năng động</span>
+          <span class="trangchu-thq-text-elm53">Xu hướng</span>
+          <span class="trangchu-thq-text-elm54">Hiện đại</span>
+          <img
+            src="public/rectangle14888-ro6t-300h.png"
+            alt="Rectangle14888"
+            class="trangchu-thq-rectangle14-elm"
+          />
+          <img
+            src="public/rectangle15895-ufht-300h.png"
+            alt="Rectangle15895"
+            class="trangchu-thq-rectangle15-elm"
+          />
+          <span class="trangchu-thq-text-elm55">Thông tin liên hệ</span>
+          <img
+            src="public/facebook890-ie9fo-200w.png"
+            alt="Facebook890"
+            class="trangchu-thq-facebook-elm1"
+          />
+          <img
+            src="public/facebook891-d7gp-200w.png"
+            alt="Facebook891"
+            class="trangchu-thq-facebook-elm2"
+          />
+          <img
+            src="public/instagram892-o4w5-200w.png"
+            alt="Instagram892"
+            class="trangchu-thq-instagram-elm"
+          />
+          <img
+            src="public/x893-3iv4-200w.png"
+            alt="X893"
+            class="trangchu-thq-x-elm"
+          />
+          <span class="trangchu-thq-text-elm56">
+            Các hình thức thanh toán và giao hàng
+          </span>
+          <img
+            src="public/amazon897-d5ni-200w.png"
+            alt="Amazon897"
+            class="trangchu-thq-amazon-elm"
+          />
+          <img
+            src="public/shopee898-nkxs8-200w.png"
+            alt="Shopee898"
+            class="trangchu-thq-shopee-elm"
+          />
+          <img
+            src="public/visa8100-6v9f-200w.png"
+            alt="Visa8100"
+            class="trangchu-thq-visa-elm"
+          />
+        </div>
+        <a href="https://play.teleporthq.io/signup" class="trangchu-link">
+          <div aria-label="Sign up to TeleportHQ" class="trangchu-container2">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 19 21"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="trangchu-icon1"
+            >
+              <path
+                d="M9.1017 4.64355H2.17867C0.711684 4.64355 -0.477539 5.79975 -0.477539 7.22599V13.9567C-0.477539 15.3829 0.711684 16.5391 2.17867 16.5391H9.1017C10.5687 16.5391 11.7579 15.3829 11.7579 13.9567V7.22599C11.7579 5.79975 10.5687 4.64355 9.1017 4.64355Z"
+                fill="#B23ADE"
+              ></path>
+              <path
+                d="M10.9733 12.7878C14.4208 12.7878 17.2156 10.0706 17.2156 6.71886C17.2156 3.3671 14.4208 0.649963 10.9733 0.649963C7.52573 0.649963 4.73096 3.3671 4.73096 6.71886C4.73096 10.0706 7.52573 12.7878 10.9733 12.7878Z"
+                fill="#FF5C5C"
+              ></path>
+              <path
+                d="M17.7373 13.3654C19.1497 14.1588 19.1497 15.4634 17.7373 16.2493L10.0865 20.5387C8.67402 21.332 7.51855 20.6836 7.51855 19.0968V10.5141C7.51855 8.92916 8.67402 8.2807 10.0865 9.07221L17.7373 13.3654Z"
+                fill="#2874DE"
+              ></path>
+            </svg>
+            <span class="trangchu-text34">Built in TeleportHQ</span>
+          </div>
+        </a>
+      </div>
+      <link
+        rel="canonical"
+        href="https://thiet-ke-trang-web-ban-giay-6jm5v2.teleporthq.app/"
+      />
+    </div>
+  </body>
+</html>

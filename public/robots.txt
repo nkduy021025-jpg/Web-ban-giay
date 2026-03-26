@@ -1,0 +1,7 @@
+User-agent: Googlebot
+Disallow: /nogooglebot/
+
+User-agent: *
+Allow: /
+
+Sitemap: https://thiet-ke-trang-web-ban-giay-6jm5v2.teleporthq.app/sitemap.xml
