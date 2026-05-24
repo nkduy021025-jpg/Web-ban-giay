@@ -707,3 +707,85 @@
   font-weight: 500;
   line-height: 24px;
 }
+/* ======================================================== */
+/* ĐOẠN CSS BỔ SUNG: CĂN CHỈNH BỐ CỤC HÀI HÒA & CÂN ĐỐI */
+/* ======================================================== */
+
+/* 1. Căn giữa toàn bộ trang web vào chính giữa màn hình */
+.trangchu-container1 {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center; /* Đưa toàn bộ nội dung vào giữa theo chiều ngang */
+  background-color: #fbf1eb; /* Màu nền nhẹ nhàng, hài hòa với tone cam */
+  overflow-x: hidden;
+}
+
+/* 2. Định hình lại khung chứa gốc từ Figma để tránh tràn màn hình */
+.trangchu-thq-trangchu-elm {
+  position: relative !important; /* Chuyển từ hệ tọa độ động sang khung tham chiếu */
+  margin: 0 auto !important;     /* Căn giữa tuyệt đối */
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); /* Tạo đổ bóng nhẹ giúp web xịn xò hơn */
+  background-color: #ffffff;
+  overflow: hidden;
+  /* Giữ nguyên kích thước gốc của bạn nhưng không cho phép méo mó */
+  max-width: 100%; 
+}
+
+/* 3. Tối ưu hóa các thẻ chữ (Text spans) tránh bị nhảy dòng lỗi */
+.trangchu-thq-trangchu-elm span {
+  white-space: normal !important; /* Cho phép chữ xuống dòng tự nhiên khi hết khung */
+  word-wrap: break-word;
+}
+
+/* 4. Làm mịn các hiệu ứng di chuột (Hover) lên sản phẩm */
+.trangchu-thq-rectangle3-elm,
+.trangchu-thq-rectangle4-elm,
+.trangchu-thq-rectangle5-elm,
+.trangchu-thq-rectangle6-elm,
+.trangchu-thq-rectangle7-elm,
+.trangchu-thq-rectangle8-elm {
+  cursor: pointer;
+  transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.3s ease !important;
+}
+
+/* Hiệu ứng nhấc nhẹ hình ảnh sản phẩm lên khi người dùng rà chuột vào */
+.trangchu-thq-rectangle3-elm:hover,
+.trangchu-thq-rectangle4-elm:hover,
+.trangchu-thq-rectangle5-elm:hover,
+.trangchu-thq-rectangle6-elm:hover,
+.trangchu-thq-rectangle7-elm:hover,
+.trangchu-thq-rectangle8-elm:hover {
+  transform: translateY(-8px) scale(1.02) !important;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* 5. Căn chỉnh thanh điều hướng Nav Menu mượt mà hơn */
+.trangchu-thq-frame1-elm {
+  display: flex !important;
+  justify-content: space-around !important; /* Chia đều khoảng cách các mục Trang chủ, Nike, Adidas... */
+  align-items: center !important;
+  padding: 0 20px;
+}
+
+.trangchu-thq-frame1-elm span {
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+/* Đổi màu chữ sang tone cam thương hiệu khi rà chuột trên menu */
+.trangchu-thq-frame1-elm span:hover {
+  color: #BF4408 !important;
+}
+
+/* 6. Định dạng phần chân trang (Footer) cho gọn gàng */
+footer {
+  width: 100%;
+  background-color: #191818;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
