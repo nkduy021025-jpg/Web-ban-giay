@@ -1,10 +1,21 @@
 <!DOCTYPE html>
 <html lang="vi">
   <head>
-    <title>Trang web bán giày</title>
-    <meta property="og:title" content="Trang web bán giày" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShoesShop - Cửa Hàng Giày Thể Thao & Chạy Bộ Chính Hãng</title>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Chuyên cung cấp các loại giày thể thao, giày chạy bộ Nike, Adidas, Converse, Bitis chính hãng giá tốt nhất. Hỗ trợ tư vấn chọn size giày chuẩn xác." />
+    <meta name="keywords" content="giày thể thao, giày chạy bộ, giày nike chính hãng, giày adidas nam, mua giày online" />
+    
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="ShoesShop - Cửa Hàng Giày Thể Thao & Chạy Bộ Chính Hãng" />
+    <meta property="og:description" content="Chuyên cung cấp các loại giày thể thao, giày chạy bộ Nike, Adidas, Converse chính hãng giá tốt nhất." />
+    <meta property="og:url" content="https://web-ban-giay-oaye.onrender.com" />
+    <meta property="og:image" content="https://web-ban-giay-oaye.onrender.com/public/rectangle3616-25z-300h.png" />
+
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="ShoesShop - Cửa Hàng Giày Thể Thao & Chạy Bộ Chính Hãng" />
+    <meta property="twitter:description" content="Chuyên cung cấp các loại giày thể thao, giày chạy bộ Nike, Adidas chính hãng giá tốt." />
 
     <style data-tag="reset-style-sheet">
       html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;  -webkit-font-smoothing: antialiased;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;  color: inherit;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}pre {  white-space: normal;}input {  padding: 2px 4px;}img {  display: block;}details {  display: block;  margin: 0;  padding: 0;}summary::-webkit-details-marker {  display: none;}[data-thq="accordion"] [data-thq="accordion-content"] {  max-height: 0;  overflow: hidden;  transition: max-height 0.3s ease-in-out;  padding: 0;}[data-thq="accordion"] details[data-thq="accordion-trigger"][open] + [data-thq="accordion-content"] {  max-height: 1000vh;}details[data-thq="accordion-trigger"][open] summary [data-thq="accordion-icon"] {  transform: rotate(180deg);}html { scroll-behavior: smooth  }
@@ -12,51 +23,92 @@
     <style data-tag="default-style-sheet">
       html { font-family: Inter; font-size: 16px; }
       body {
-        font-weight: 400; font-style:normal; text-decoration: none; text-transform: none;
-        letter-spacing: normal; line-height: 1.15; color: var(--dl-color-theme-neutral-dark);
-        background: var(--dl-color-theme-neutral-light); fill: var(--dl-color-theme-neutral-dark);
+        font-weight: 400; font-style:normal; text-decoration: none; text-transform: none; letter-spacing: normal; line-height: 1.15;
+        color: var(--dl-color-theme-neutral-dark); background: var(--dl-color-theme-neutral-light); fill: var(--dl-color-theme-neutral-dark);
       }
+      /* CSS bổ sung để làm vùng FAQ và Thực thể trở nên xịn xò, đẹp mắt hơn */
+      .ai-faq-section {
+        background-color: #ffffff; padding: 60px 20px; max-width: 1200px; margin: 40px auto;
+        border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); font-family: 'Inter', sans-serif;
+      }
+      .ai-faq-heading {
+        font-size: 28px; text-align: center; color: #191818; margin-bottom: 40px; font-weight: 700; position: relative;
+      }
+      .ai-faq-heading::after {
+        content: ''; display: block; width: 60px; height: 4px; background: #BF4408; margin: 10px auto 0; border-radius: 2px;
+      }
+      .ai-faq-grid {
+        display: grid; grid-template-columns: 1fr 1fr; gap: 30px;
+      }
+      @media(max-width: 768px) { .ai-faq-grid { grid-template-columns: 1fr; } }
+      .ai-faq-item {
+        background: #FBFAF9; padding: 24px; border-radius: 12px; border-left: 5px solid #BF4408; transition: transform 0.3s ease;
+      }
+      .ai-faq-item:hover { transform: translateY(-5px); }
+      .ai-faq-question { font-size: 18px; font-weight: 600; color: #191818; margin-bottom: 12px; }
+      .ai-faq-answer { font-size: 15px; color: #555; line-height: 1.6; }
     </style>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
-    
+    <link rel="stylesheet" href="https://unpkg.com/animate.css@4.1.1/animate.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" data-tag="font" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:wght@400;500;600;700&amp;display=swap" data-tag="font" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&amp;display=swap" data-tag="font" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&amp;display=swap" data-tag="font" />
+    <link rel="stylesheet" href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css" />
+
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Làm sao để chọn đúng size giày khi mua trực tuyến?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Bạn nên đo chiều dài bàn chân từ gót đến đầu ngón chân dài nhất, sau đó đối chiếu với bảng quy đổi size (Size Chart) chính thức của từng thương hiệu như Nike, Adidas hoặc Bitis để có kích thước chính xác nhất."
+      "@type": "ShoeStore",
+      "name": "ShoesShop - Cửa Hàng Giày Thể Thao Chính Hãng",
+      "image": "https://web-ban-giay-oaye.onrender.com/public/rectangle3616-25z-300h.png",
+      "description": "Cửa hàng phân phối giày thể thao, giày chạy bộ từ các thương hiệu hàng đầu như Nike, Adidas, Converse chính hãng.",
+      "url": "https://web-ban-giay-oaye.onrender.com",
+      "telephone": "+84123456789",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Đường số 1, Quận 1",
+        "addressLocality": "Thành phố Hồ Chí Minh",
+        "addressCountry": "VN"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "08:00",
+        "closes": "22:00"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Danh mục sản phẩm giày",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "Giày Nike Air Force 1 Low College Pack Midnight Navy DQ7659 101",
+              "price": "3621000",
+              "priceCurrency": "VND"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "Giày Adidas Nam Nữ Chính Hãng - Pureboost Light Shoes - Màu Đen",
+              "price": "1580000",
+              "priceCurrency": "VND"
+            }
           }
-        },
-        {
-          "@type": "Question",
-          "name": "Shop giày có cam kết hàng chính hãng 100% không?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Chúng tôi cam kết toàn bộ sản phẩm giày thể thao Nike, Adidas, Converse, Bitis đều là hàng chính hãng 100%, đầy đủ hộp và tem mác hóa đơn nguồn gốc rõ ràng."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Chính sách đổi trả hàng của shop như thế nào?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Khách hàng được hỗ trợ đổi size hoặc đổi mẫu mới trong vòng 7 ngày kể từ khi nhận hàng, áp dụng cho sản phẩm chưa qua sử dụng và còn nguyên vẹn tem mác."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Thời gian và chi phí giao hàng mất bao lâu?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Đơn hàng nội thành sẽ giao trong vòng 1-2 ngày, đơn tỉnh từ 3-5 ngày. Shop áp dụng chính sách miễn phí vận chuyển cho tất cả đơn hàng có giá trị từ 1.000.000đ trở lên."
-          }
-        }
-      ]
+        ]
+      }
     }
     </script>
   </head>
@@ -65,108 +117,192 @@
     <div>
       <link href="./index.css" rel="stylesheet" />
 
-      <div class="trangchu-container1">
-        <div class="trangchu-thq-trangchu-elm">
-          <img src="public/rectangle2614-hut-200h.png" alt="Rectangle2614" class="trangchu-thq-rectangle2-elm" />
-          <div class="trangchu-thq-frame1-elm">
-            <span class="trangchu-thq-text-elm10">Trang chủ</span>
-            <span class="trangchu-thq-text-elm11">Giới thiệu</span>
-            <span class="trangchu-thq-text-elm12">Nike</span>
-            <span class="trangchu-thq-text-elm13">Adidas</span>
-            <span class="trangchu-thq-text-elm14">Converse</span>
-            <span class="trangchu-thq-text-elm15">Giày Nam</span>
-            <span class="trangchu-thq-text-elm16">Giày Nữ</span>
-            <span class="trangchu-thq-text-elm17">Trẻ em</span>
-            <span class="trangchu-thq-text-elm18">Giỏ hàng</span>
-            <span class="trangchu-thq-text-elm19">Tư vấn</span>
-          </div>
-          <img src="public/rectangle1411-vnv6-200h.png" alt="Rectangle1411" class="trangchu-thq-rectangle1-elm" />
-          <img src="public/search512-lpg-200w.png" alt="Search512" class="trangchu-thq-search-elm" />
-          <img src="public/hdrestorationresultimage1615-pp8f-200h.png" alt="hdrestorationresultimage1615" class="trangchu-thq-hdrestorationresultimage1-elm" />
-          <img src="public/rectangle3616-25z-300h.png" alt="Rectangle3616" class="trangchu-thq-rectangle3-elm" />
-          <img src="public/rectangle4717-d4k-300h.png" alt="Rectangle4717" class="trangchu-thq-rectangle4-elm" />
-          <img src="public/rectangle5718-uwx9-300h.png" alt="Rectangle5718" class="trangchu-thq-rectangle5-elm" />
-          <img src="public/rectangle6719-ww81-300h.png" alt="Rectangle6719" class="trangchu-thq-rectangle6-elm" />
-          <img src="public/rectangle7721-w0wp-300h.png" alt="Rectangle7721" class="trangchu-thq-rectangle7-elm" />
-          <img src="public/rectangle8722-iunv-300h.png" alt="Rectangle8722" class="trangchu-thq-rectangle8-elm" />
-          <img src="public/rectangle9723-0vk-300h.png" alt="Rectangle9723" class="trangchu-thq-rectangle9-elm" />
-          
-          <span class="trangchu-thq-text-elm20">
-            <span class="trangchu-thq-text-elm21">Nike</span><br /><br />
-            <span class="trangchu-thq-text-elm22">Giày Nike Air Force 1 Low College Pack Midnight Navy DQ7659 101</span><br />
-            <span class="trangchu-thq-text-elm23"></span><br /><span>3.621.000đ</span>
-          </span>
-          <span class="trangchu-thq-text-elm25">
-            <span class="trangchu-thq-text-elm26">Adidas</span><br /><br />
-            <span class="trangchu-thq-text-elm27">Giày Adidas Nam Nữ Chính Hãng - Pureboost Light Shoes - Màu Đen</span><br /><br /><span>1.580.000đ</span>
-          </span>
-          <span class="trangchu-thq-text-elm29">
-            <span class="trangchu-thq-text-elm30">Bitis</span><br /><br />
-            <span class="trangchu-thq-text-elm31">Giày Thể Thao Biti’s Hunter Running LiteDual</span><span class="trangchu-thq-text-elm32">&nbsp;</span><br />
-            <span class="trangchu-thq-text-elm33"></span><br /><span>1.259.000đ</span>
-          </span>
-          <span class="trangchu-thq-text-elm35">
-            <span class="trangchu-thq-text-elm36">MLB</span><br /><br />
-            <span class="trangchu-thq-text-elm37">Giày Trẻ Em MLB&nbsp;Big Ball Chunky Flex Girls Monogram New York</span><br />
-            <span class="trangchu-thq-text-elm38"></span><br /><span>2.190.000đ</span>
-          </span>
-          <span class="trangchu-thq-text-elm40">
-            <span class="trangchu-thq-text-elm41">Zocker</span><br /><br />
-            <span class="trangchu-thq-text-elm42">Giày Chạy Bộ Zocker Ultra Light Moon/Black</span><br />
-            <span class="trangchu-thq-text-elm43"></span><br /><span>690.000đ</span>
-          </span>
-          <span class="trangchu-thq-text-elm45">
-            <span class="trangchu-thq-text-elm46">Converse</span><br /><br />
-            <span class="trangchu-thq-text-elm47">Giày Thể Thao Converse Chuck 70 Hi Unisex</span><br />
-            <span class="trangchu-thq-text-elm48"></span><br /><span>2.200.000đ</span>
-          </span>
-          
-          <span class="trangchu-thq-text-elm50">PHONG CÁCH</span>
-          <img src="public/line1870-iw3a.svg" alt="Line1870" class="trangchu-thq-line1-elm" />
-          <img src="public/rectangle10880-gcv-300w.png" alt="Rectangle10880" class="trangchu-thq-rectangle10-elm" />
-          <img src="public/rectangle11881-gemh-300w.png" alt="Rectangle11881" class="trangchu-thq-rectangle11-elm" />
-          <img src="public/rectangle12882-zz43-300w.png" alt="Rectangle12882" class="trangchu-thq-rectangle12-elm" />
-          <img src="public/rectangle13883-pbx-300w.png" alt="Rectangle13883" class="trangchu-thq-rectangle13-elm" />
-          <span class="trangchu-thq-text-elm51">Trẻ trung</span>
-          <span class="trangchu-thq-text-elm52">Năng động</span>
-          <span class="trangchu-thq-text-elm53">Xu hướng</span>
-          <span class="trangchu-thq-text-elm54">Hiện đại</span>
-          <img src="public/rectangle14888-ro6t-300h.png" alt="Rectangle14888" class="trangchu-thq-rectangle14-elm" />
-          <img src="public/rectangle15895-ufht-300h.png" alt="Rectangle15895" class="trangchu-thq-rectangle15-elm" />
-          <span class="trangchu-thq-text-elm55">Thông tin liên hệ</span>
-          <img src="public/facebook890-ie9fo-200w.png" alt="Facebook890" class="trangchu-thq-facebook-elm1" />
-          <img src="public/facebook891-d7gp-200w.png" alt="Facebook891" class="trangchu-thq-facebook-elm2" />
-          <img src="public/instagram892-o4w5-200w.png" alt="Instagram892" class="trangchu-thq-instagram-elm" />
-          <img src="public/x893-3iv4-200w.png" alt="X893" class="trangchu-thq-x-elm" />
-          <span class="trangchu-thq-text-elm56">Các hình thức thanh toán và giao hàng</span>
-          <img src="public/amazon897-d5ni-200w.png" alt="Amazon897" class="trangchu-thq-amazon-elm" />
-          <img src="public/shopee898-nkxs8-200w.png" alt="Shopee898" class="trangchu-thq-shopee-elm" />
-          <img src="public/visa8100-6v9f-200w.png" alt="Visa8100" class="trangchu-thq-visa-elm" />
-        </div>
+      <header>
+        </header>
 
-        <div class="custom-faq-container">
-          <h2 class="faq-title">Giải đáp thắc mắc - Giày Thể Thao Store</h2>
-          <div class="faq-grid">
-            <div class="faq-item">
-              <h3 class="faq-question">Làm sao để chọn đúng size giày khi mua trực tuyến?</h3>
-              <p class="faq-answer">Bạn nên đo chiều dài bàn chân từ gót đến đầu ngón chân dài nhất, sau đó đối chiếu với bảng quy đổi size (Size Chart) chính thức của từng thương hiệu như Nike, Adidas hoặc Bitis để có kích thước chính xác nhất.</p>
-            </div>
-            <div class="faq-item">
-              <h3 class="faq-question">Shop giày có cam kết hàng chính hãng 100% không?</h3>
-              <p class="faq-answer">Chúng tôi cam kết toàn bộ sản phẩm giày thể thao Nike, Adidas, Converse, Bitis đều là hàng chính hãng 100%, đầy đủ hộp và tem mác hóa đơn nguồn gốc rõ ràng.</p>
-            </div>
-            <div class="faq-item">
-              <h3 class="faq-question">Chính sách đổi trả hàng của shop như thế nào?</h3>
-              <p class="faq-answer">Khách hàng được hỗ trợ đổi size hoặc đổi mẫu mới trong vòng 7 ngày kể từ khi nhận hàng, áp dụng cho sản phẩm chưa qua sử dụng và còn nguyên vẹn tem mác.</p>
-            </div>
-            <div class="faq-item">
-              <h3 class="faq-question">Thời gian và chi phí giao hàng mất bao lâu?</h3>
-              <p class="faq-answer">Đơn hàng nội thành sẽ giao trong vòng 1-2 ngày, đơn tỉnh từ 3-5 ngày. Shop áp dụng chính sách miễn phí vận chuyển cho tất cả đơn hàng có giá trị từ 1.000.000đ trở lên.</p>
-            </div>
+      <main>
+        <div class="trangchu-container1">
+          <div class="trangchu-thq-trangchu-elm">
+            <img
+              src="public/rectangle2614-hut-200h.png"
+              alt="Thanh điều hướng nền"
+              class="trangchu-thq-rectangle2-elm"
+            />
+            <nav class="trangchu-thq-frame1-elm">
+              <span class="trangchu-thq-text-elm10">Trang chủ</span>
+              <span class="trangchu-thq-text-elm11">Giới thiệu</span>
+              <span class="trangchu-thq-text-elm12">Nike</span>
+              <span class="trangchu-thq-text-elm13">Adidas</span>
+              <span class="trangchu-thq-text-elm14">Converse</span>
+              <span class="trangchu-thq-text-elm15">Giày Nam</span>
+              <span class="trangchu-thq-text-elm16">Giày Nữ</span>
+              <span class="trangchu-thq-text-elm17">Trẻ em</span>
+              <span class="trangchu-thq-text-elm18">Giỏ hàng</span>
+              <span class="trangchu-thq-text-elm19">Tư vấn</span>
+            </nav>
+            <img
+              src="public/rectangle1411-vnv6-200h.png"
+              alt="Khung trang trí"
+              class="trangchu-thq-rectangle1-elm"
+            />
+            <img
+              src="public/search512-lpg-200w.png"
+              alt="Icon tìm kiếm giày"
+              class="trangchu-thq-search-elm"
+            />
+            <img
+              src="public/hdrestorationresultimage1615-pp8f-200h.png"
+              alt="Banner quảng cáo giày chính hãng"
+              class="trangchu-thq-hdrestorationresultimage1-elm"
+            />
+            
+            <img
+              src="public/rectangle3616-25z-300h.png"
+              alt="Giày Nike Air Force 1 Low College Pack Midnight Navy"
+              class="trangchu-thq-rectangle3-elm"
+            />
+            <img
+              src="public/rectangle4717-d4k-300h.png"
+              alt="Giày Adidas Pureboost Light Shoes Màu Đen"
+              class="trangchu-thq-rectangle4-elm"
+            />
+            <img
+              src="public/rectangle5718-uwx9-300h.png"
+              alt="Giày Thể Thao Biti’s Hunter Running LiteDual"
+              class="trangchu-thq-rectangle5-elm"
+            />
+            <img
+              src="public/rectangle6719-ww81-300h.png"
+              alt="Giày Trẻ Em MLB Big Ball Chunky Flex Girls"
+              class="trangchu-thq-rectangle6-elm"
+            />
+            <img
+              src="public/rectangle7721-w0wp-300h.png"
+              alt="Giày Chạy Bộ Zocker Ultra Light"
+              class="trangchu-thq-rectangle7-elm"
+            />
+            <img
+              src="public/rectangle8722-iunv-300h.png"
+              alt="Giày Thể Thao Converse Chuck 70 Hi Unisex"
+              class="trangchu-thq-rectangle8-elm"
+            />
+            <img
+              src="public/rectangle9723-0vk-300h.png"
+              alt="Hình nền trang trí danh mục"
+              class="trangchu-thq-rectangle9-elm"
+            />
+            
+            <span class="trangchu-thq-text-elm20">
+              <span class="trangchu-thq-text-elm21">Nike</span><br /><br />
+              <span class="trangchu-thq-text-elm22">Giày Nike Air Force 1 Low College Pack Midnight Navy DQ7659 101</span><br />
+              <span class="trangchu-thq-text-elm23"></span><br />
+              <span>3.621.000đ</span>
+            </span>
+            
+            <span class="trangchu-thq-text-elm25">
+              <span class="trangchu-thq-text-elm26">Adidas</span><br /><br />
+              <span class="trangchu-thq-text-elm27">Giày Adidas Nam Nữ Chính Hãng - Pureboost Light Shoes - Màu Đen</span><br /><br />
+              <span>1.580.000đ</span>
+            </span>
+            
+            <span class="trangchu-thq-text-elm29">
+              <span class="trangchu-thq-text-elm30">Bitis</span><br /><br />
+              <span class="trangchu-thq-text-elm31">Giày Thể Thao Biti’s Hunter Running LiteDual</span><br />
+              <span class="trangchu-thq-text-elm33"></span><br />
+              <span>1.259.000đ</span>
+            </span>
+            
+            <span class="trangchu-thq-text-elm35">
+              <span class="trangchu-thq-text-elm36">MLB</span><br /><br />
+              <span class="trangchu-thq-text-elm37">Giày Trẻ Em MLB Big Ball Chunky Flex Girls Monogram New York</span><br />
+              <span class="trangchu-thq-text-elm38"></span><br />
+              <span>2.190.000đ</span>
+            </span>
+            
+            <span class="trangchu-thq-text-elm40">
+              <span class="trangchu-thq-text-elm41">Zocker</span><br /><br />
+              <span class="trangchu-thq-text-elm42">Giày Chạy Bộ Zocker Ultra Light Moon/Black</span><br />
+              <span class="trangchu-thq-text-elm43"></span><br />
+              <span>690.000đ</span>
+            </span>
+            
+            <span class="trangchu-thq-text-elm45">
+              <span class="trangchu-thq-text-elm46">Converse</span><br /><br />
+              <span class="trangchu-thq-text-elm47">Giày Thể Thao Converse Chuck 70 Hi Unisex</span><br />
+              <span class="trangchu-thq-text-elm48"></span><br />
+              <span>2.200.000đ</span>
+            </span>
+            
+            <span class="trangchu-thq-text-elm50">PHONG CÁCH</span>
+            <img src="public/line1870-iw3a.svg" alt="Line" class="trangchu-thq-line1-elm" />
+            <img src="public/rectangle10880-gcv-300w.png" alt="Phong cách trẻ trung" class="trangchu-thq-rectangle10-elm" />
+            <img src="public/rectangle11881-gemh-300w.png" alt="Phong cách năng động" class="trangchu-thq-rectangle11-elm" />
+            <img src="public/rectangle12882-zz43-300w.png" alt="Phong cách xu hướng" class="trangchu-thq-rectangle12-elm" />
+            <img src="public/rectangle13883-pbx-300w.png" alt="Phong cách hiện đại" class="trangchu-thq-rectangle13-elm" />
+            
+            <span class="trangchu-thq-text-elm51">Trẻ trung</span>
+            <span class="trangchu-thq-text-elm52">Năng động</span>
+            <span class="trangchu-thq-text-elm53">Xu hướng</span>
+            <span class="trangchu-thq-text-elm54">Hiện đại</span>
+            
+            <img src="public/rectangle14888-ro6t-300h.png" alt="Footer background" class="trangchu-thq-rectangle14-elm" />
+            <img src="public/rectangle15895-ufht-300h.png" alt="Footer decoration" class="trangchu-thq-rectangle15-elm" />
+            
+            <span class="trangchu-thq-text-elm55">Thông tin liên hệ</span>
+            <img src="public/facebook890-ie9fo-200w.png" alt="Facebook liên hệ" class="trangchu-thq-facebook-elm1" />
+            <img src="public/facebook891-d7gp-200w.png" alt="Facebook hỗ trợ" class="trangchu-thq-facebook-elm2" />
+            <img src="public/instagram892-o4w5-200w.png" alt="Instagram cửa hàng" class="trangchu-thq-instagram-elm" />
+            <img src="public/x893-3iv4-200w.png" alt="Twitter cửa hàng" class="trangchu-thq-x-elm" />
+            
+            <span class="trangchu-thq-text-elm56">Các hình thức thanh toán và giao hàng</span>
+            <img src="public/amazon897-d5ni-200w.png" alt="Thanh toán qua Amazon" class="trangchu-thq-amazon-elm" />
+            <img src="public/shopee898-nkxs8-200w.png" alt="Gian hàng Shopee" class="trangchu-thq-shopee-elm" />
+            <img src="public/visa8100-6v9f-200w.png" alt="Thanh toán thẻ Visa" class="trangchu-thq-visa-elm" />
           </div>
         </div>
+      </main>
 
-      </div>
+      <section class="ai-faq-section">
+        <h2 class="ai-faq-heading">Giải Đáp Thắc Mắc Về Giày Thể Thao (FAQ)</h2>
+        <div class="ai-faq-grid">
+          
+          <div class="ai-faq-item">
+            <h3 class="ai-faq-question">Giày chạy bộ Nike nào tốt nhất cho người mới bắt đầu?</h3>
+            <p class="ai-faq-answer">Đối với người mới bắt đầu, dòng giày Nike Pegasus là lựa chọn tốt nhất nhờ công nghệ đệm bọt React êm ái, độ bền bỉ cao vượt trội và khả năng hỗ trợ phản hồi lực ổn định, giúp bảo vệ cổ chân và giảm thiểu nguy cơ chấn thương tối đa khi tham gia chạy bộ định kỳ.</p>
+          </div>
+
+          <div class="ai-faq-item">
+            <h3 class="ai-faq-question">Làm thế nào để chọn đúng size giày thể thao khi mua hàng online?</h3>
+            <p class="ai-faq-answer">Bạn nên đo chính xác chiều dài bàn chân từ gót đến đầu ngón chân dài nhất bằng centimet. Tiếp theo, đối chiếu kết quả với bảng Size Chart chuẩn xác của từng thương hiệu cụ thể (như Nike, Adidas) và tiến hành cộng thêm từ 0.5cm đến 1cm để có cảm giác đi lại thoải mái nhất.</p>
+          </div>
+
+          <div class="ai-faq-item">
+            <h3 class="ai-faq-question">Giày Adidas Pureboost Light có phù hợp để tập gym và chạy bộ không?</h3>
+            <p class="ai-faq-answer">Có, giày Adidas Pureboost Light cực kỳ phù hợp cho cả mục đích chạy bộ hằng ngày và tập gym. Nhờ trang bị công nghệ đệm Boost thế hệ mới siêu nhẹ, đôi giày mang lại độ đàn hồi cao, giảm áp lực lên các khớp gối khi vận động cường độ cao.</p>
+          </div>
+
+          <div class="ai-faq-item">
+            <h3 class="ai-faq-question">Chính sách bảo hành và đổi trả giày khi mua online tại shop như thế nào?</h3>
+            <p class="ai-faq-answer">ShoesShop hỗ trợ chính sách đổi trả sản phẩm hoàn toàn miễn phí trong vòng 7 ngày kể từ khi nhận hàng đối với các sản phẩm còn nguyên tem mác, hộp đựng và chưa qua sử dụng. Đồng thời, toàn bộ sản phẩm giày thể thao chính hãng tại shop đều được cam kết bảo hành lỗi keo và chỉ trong thời gian 6 tháng.</p>
+          </div>
+
+        </div>
+      </section>
+
+      <footer>
+        <a href="https://play.teleporthq.io/signup" class="trangchu-link">
+          <div aria-label="Sign up to TeleportHQ" class="trangchu-container2">
+            <svg width="24" height="24" viewBox="0 0 19 21" fill="none" xmlns="http://www.w3.org/2000/svg" class="trangchu-icon1">
+              <path d="M9.1017 4.64355H2.17867C0.711684 4.64355 -0.477539 5.79975 -0.477539 7.22599V13.9567C-0.477539 15.3829 0.711684 16.5391 2.17867 16.5391H9.1017C10.5687 16.5391 11.7579 15.3829 11.7579 13.9567V7.22599C11.7579 5.79975 10.5687 4.64355 9.1017 4.64355Z" fill="#B23ADE"></path>
+              <path d="M10.9733 12.7878C14.4208 12.7878 17.2156 10.0706 17.2156 6.71886C17.2156 3.3671 14.4208 0.649963 10.9733 0.649963C7.52573 0.649963 4.73096 3.3671 4.73096 6.71886C4.73096 10.0706 7.52573 12.7878 10.9733 12.7878Z" fill="#FF5C5C"></path>
+              <path d="M17.7373 13.3654C19.1497 14.1588 19.1497 15.4634 17.7373 16.2493L10.0865 20.5387C8.67402 21.332 7.51855 20.6836 7.51855 19.0968V10.5141C7.51855 8.92916 8.67402 8.2807 10.0865 9.07221L17.7373 13.3654Z" fill="#2874DE"></path>
+            </svg>
+            <span class="trangchu-text34">Built in TeleportHQ</span>
+          </div>
+        </a>
+      </footer>
+
+      <link rel="canonical" href="https://thiet-ke-trang-web-ban-giay-6jm5v2.teleporthq.app/" />
     </div>
   </body>
 </html>
